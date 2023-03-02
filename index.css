@@ -1,0 +1,100 @@
+/* QUESTION 1 and 2 */
+
+body {
+  background-color: #4e4e4e;
+  margin-top: 50px;
+}
+
+header {
+  background-color: red;
+  border-radius: 50px;
+  width: fit-content;
+  /*question 5*/
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+  border-right: 1px solid white;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+li:last-child {
+  border: none;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: red;
+}
+
+main {
+  color: white;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
+
+/* QUESTION 3 */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #cacaca;
+  margin-top: 20px;
+  width: 800px;
+  text-align: center;
+}
+
+thead th {
+  background-color: #933e42;
+}
+
+th,
+td {
+  border: 1px solid #8c8c8c;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #353232;
+}
+
+/* QUESTION 4 */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+img {
+  opacity: 0.5;
+  border: 5px solid #4e4e4e;
+  width: 270px; /* to get 280 with the border */
+  
+}
+
+img:hover{
+  opacity: 1;
+  border: 5px solid red;
+}
